@@ -1,5 +1,6 @@
 from prime_factors import prime_factors
 
+#Using https://mathschallenge.net/index.php?section=faq&ref=number/sum_of_divisors
 def proper_divisors_sum(n):
     result = 1
     pf = prime_factors(n)

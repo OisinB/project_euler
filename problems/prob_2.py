@@ -1,12 +1,8 @@
 import sys
-from math import sqrt
+sys.path.insert(0, '/Users/oisin-brogan/Code/project_euler/snippets')
+from fib_n import fib_n
 
 n = int(sys.argv[1])
-
-phi = (sqrt(5) + 1)/2
-
-def fib_n(n):
-    return round((pow(phi, n) - pow(-phi, -n))/sqrt(5))
 
 i = 3
 result = 0

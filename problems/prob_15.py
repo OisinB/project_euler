@@ -6,7 +6,7 @@ x, y = 1, 1 #x is width, y is height
 
 def num_ways(i, j):
     if i == 0 or j ==0:
-            return 1
+        return 1
 
     if (i,j) in look_up_table:
         return look_up_table[(i,j)]

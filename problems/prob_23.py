@@ -7,5 +7,21 @@ for n in range(1, 28123-12+1):
     if proper_divisors_sum(n) > n:
         abundent_numbers.append(n)
 
-print(len(abundent_numbers))
-print(abundent_numbers[:5])
+culprits = list(range(1, 24))
+
+for candidate in range(24, 28123):
+    s = {}
+    for i in abundent_numbers:
+        if i in s:
+            #candidate can be constrcucted as sum of two
+            break
+        if (i > candidate - 12):
+            #Won't find anything smaller
+            culprits.append(candidate)
+            break
+        else:
+            s[candidate - i] = i
+            if i == candidate - i:
+                break
+#print(abundent_numbers[:100])
+print(sum(culprits))

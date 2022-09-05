@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/Users/oisin-brogan/Code/project_euler/snippets')
+sys.path.insert(0, '/Users/oisin.brogan/Code/project_euler/snippets')
 from sieve_of_eratosthenes import prime_seive
 
 #You can get the same result by setting n = x-c in n**2 -n + 41
